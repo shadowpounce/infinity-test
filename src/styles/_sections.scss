@@ -1,0 +1,155 @@
+.hero {
+  height: 41.667vw;
+
+  background-image: url('/images/hero/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 2.292vw 0 2vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  @media (max-width: 768px) {
+    height: 60vw;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+
+    padding-block: 0;
+  }
+
+  &-logo {
+    width: 34.134vw;
+    height: 13.236vw;
+  }
+
+  &-human {
+    width: 62.5vw;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    object-fit: contain;
+    object-position: center;
+
+    @media (max-width: 768px) {
+      object-position: bottom center;
+      width: 80vw;
+    }
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75vw;
+
+    h1 {
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: normal;
+
+      &:nth-child(2) {
+        color: #040f85;
+        background-color: #ffe500;
+
+        padding: 0.108vw 0.667vw 0.108vw 0.208vw;
+      }
+
+      &:nth-child(3) {
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+main {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4vw;
+
+    @media (max-width: 768px) {
+      gap: 8vw;
+    }
+  }
+
+  .wrapper {
+    max-width: 57.917vw;
+    width: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+
+    .row {
+      display: flex;
+      align-items: flex-end;
+      gap: 1.667vw;
+
+      @media (max-width: 768px) {
+        gap: 2vw;
+      }
+    }
+
+    .picture {
+      max-width: 46.833vw;
+      width: 100%;
+      height: 25.667vw;
+
+      object-fit: contain;
+      object-position: center;
+
+      @media (max-width: 768px) {
+        max-width: 100vw;
+      }
+    }
+
+    .logo {
+      width: 7.5vw;
+      height: 7.5vw;
+
+      object-fit: contain;
+      object-position: center;
+
+      @media (max-width: 768px) {
+        width: 15vw;
+        height: 15vw;
+      }
+    }
+
+    .text {
+      font-size: 1.884vw;
+      font-weight: 400;
+      color: #4b4b4b;
+
+      max-width: 32.5vw;
+      width: 100%;
+
+      @media (max-width: 768px) {
+        font-size: 3vw;
+        max-width: 100%;
+      }
+    }
+  }
+}
