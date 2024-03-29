@@ -35,7 +35,7 @@ window.addEventListener('load', () => {
     }
   }, 20000)
 
-  document.addEventListener('mouseleave', function (event) {
+  document.addEventListener('mouseleave', function () {
     if (!popupTriggeredOnMouseLeave) {
       cursorOnSite = false
       popupTriggeredOnMouseLeave = true
