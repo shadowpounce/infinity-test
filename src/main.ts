@@ -1,4 +1,5 @@
 import './styles/index.scss'
+import './number-validation.js'
 
 const popup = document.querySelector('.popup') as HTMLDivElement
 const overlay = popup.querySelector('.overlay') as HTMLDivElement
